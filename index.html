@@ -59,7 +59,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" id="centre">
               <li class="nav-item active">
                 <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
               </li>
@@ -82,11 +82,56 @@
                 <a class="nav-link" href="#">contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">blog</a>
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><button type="button" class="btn" data-toggle="modal" data-target="#abonnement">
+                  S'abonner
+                </button></a>
               </li>
             </ul>
           </div>
         </nav>
+
+        <!-- Modal s'abonner -->
+        <div class="modal fade" id="abonnement" tabindex="-1" role="dialog" aria-labelledby="abonnementTitle" aria-hidden="true">
+          <div class="modal-dialog abonner" role="document">
+            <div class="card">
+          <div class="card-block">
+
+            <!--Header-->
+            <div class="text-center">
+                <h3><i class="fa fa-pencil"></i>Abonnez vous!</h3>
+                <hr class="mt-2 mb-2">
+            </div>
+
+            <!--Body-->
+            <p>Recevez nos dernières nouvelles directement
+              dans votre boîte de réception ! (1 seule fois par semaine max)</p>
+            <br>
+
+            <!--Body-->
+            <div class="md-form">
+              <i class="fa fa-user prefix"></i>
+              <input type="text" id="form3" class="form-control">
+              <label for="form3">Nom</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fa fa-envelope prefix"></i>
+              <input type="text" id="form2" class="form-control">
+              <label for="form2">Email</label>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-deep-orange">Je m'abonne</button>
+            </div>
+
+           </div>
+          </div>
+     <!--/Form without header-->
+          </div>
+        </div>
 
         <article class="">
           <div class="container">
@@ -105,31 +150,6 @@
           </ul>
         </nav>
 
-        </article>
-
-        <article class="container">
-          <div class="row">
-            <div class="col-12 no-padding lib-item" data-category="view">
-              <div class="lib-panel">
-                <div class="row box-shadow">
-                  <div class="col-md-6">
-                    <img class="lib-img-show" src="img/pc/article2.jpg">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="lib-row lib-header">
-                      <h3>Concours</h3>
-                      <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
-                    </div>
-                    <div class="lib-row lib-desc">
-                      Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
-                      longévité on va pas se le cacher !
-                      La ligne éditoriale a un peu évoluée avec ...
-                     <br><button type="button" class="btn btn-primary btn-lg">En savoir plus</button>
-                    </div>
-                 </div>
-               </div>
-             </div>
-          </div>
         </article>
 
         <article class="container">
@@ -157,132 +177,65 @@
           </div>
         </article>
 
-        <article class="container">
-          <div class="row">
-            <div class="col-12 no-padding lib-item" data-category="view">
-              <div class="lib-panel">
-                <div class="row box-shadow">
-                  <div class="col-md-6">
-                    <img class="lib-img-show" src="img/pc/article2.jpg">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="lib-row lib-header">
-                      <h3>Concours</h3>
-                      <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
-                    </div>
-                    <div class="lib-row lib-desc">
-                      Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
-                      longévité on va pas se le cacher !
-                      La ligne éditoriale a un peu évoluée avec ...
-                     <br><button type="button" class="btn btn-primary btn-lg">En savoir plus</button>
-                    </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-        </article>
-
-        <article class="container">
-          <div class="row">
-            <div class="col-12 no-padding lib-item" data-category="view">
-              <div class="lib-panel">
-                <div class="row box-shadow">
-                  <div class="col-md-6">
-                    <img class="lib-img-show" src="img/pc/article3.jpg">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="lib-row lib-header">
-                      <h3>Concours</h3>
-                      <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
-                    </div>
-                    <div class="lib-row lib-desc">
-                      Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
-                      longévité on va pas se le cacher !
-                      La ligne éditoriale a un peu évoluée avec ...
-                     <br><button type="button" class="btn btn-primary btn-lg">En savoir plus</button>
-                    </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-        </article>
-
-        <article class="container">
-          <div class="row">
-            <div class="col-12 no-padding lib-item" data-category="view">
-              <div class="lib-panel">
-                <div class="row box-shadow">
-                  <div class="col-md-6">
-                    <img class="lib-img-show" src="img/pc/article4.png">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="lib-row lib-header">
-                      <h3>Concours</h3>
-                      <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
-                    </div>
-                    <div class="lib-row lib-desc">
-                      Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
-                      longévité on va pas se le cacher !
-                      La ligne éditoriale a un peu évoluée avec ...
-                     <br><button type="button" class="btn btn-primary btn-lg">En savoir plus</button>
-                    </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-        </article>
-
-        <article class="container">
-          <div class="row">
-            <div class="col-12 no-padding lib-item" data-category="view">
-              <div class="lib-panel">
-                <div class="row box-shadow">
-                  <div class="col-md-6">
-                    <img class="lib-img-show" src="img/pc/article5.png">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="lib-row lib-header">
-                      <h3>Concours</h3>
-                      <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
-                    </div>
-                    <div class="lib-row lib-desc">
-                      Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
-                      longévité on va pas se le cacher !
-                      La ligne éditoriale a un peu évoluée avec ...
-                     <br><button type="button" class="btn btn-primary btn-lg">En savoir plus</button>
-                    </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-        </article>
-
-        <article class="container">
-          <div class="row">
-            <div class="col-12 no-padding lib-item" data-category="view">
-              <div class="lib-panel">
-                <div class="row box-shadow">
-                  <div class="col-md-6">
-                    <img class="lib-img-show" src="img/pc/article6.jpg">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="lib-row lib-header">
-                      <h3>Concours</h3>
-                      <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
-                    </div>
-                    <div class="lib-row lib-desc">
-                      Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
-                      longévité on va pas se le cacher !
-                      La ligne éditoriale a un peu évoluée avec ...
-                     <br><button type="button" class="btn btn-primary btn-lg">En savoir plus</button>
-                    </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-        </article>
-
       </main>
+
+      <footer class="row contenair-fluid d-flex justify-content-center">
+        <section class="col-lg-3">
+         <h3>Abonnez vous!</h3>
+         <p>Recevez nos dernières nouvelles directement
+           dans votre boîte de réception ! (1 seule fois par semaine max) </p>
+         <form>
+           <div class="form-group row">
+             <label for="inputNom" class="col-sm-2 col-form-label">Nom</label>
+             <div class="col-sm-10">
+               <input type="nom" class="form-control" id="inputNom" placeholder="Nom">
+             </div>
+           </div>
+           <div class="form-group row">
+             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+             <div class="col-sm-10">
+               <input type="email" class="form-control" id="inputPassword3" placeholder="Email">
+             </div>
+           </div>
+           <div class="form-group row">
+             <div class="offset-sm-2 col-sm-10">
+               <button type="submit" class="btn btn-primary">Je m'abonne</button>
+             </div>
+           </div>
+         </form>
+       </section>
+
+        <div class=" col-lg-7 row">
+          <section class="col-lg-4  col-md-6 col-sm-12">
+            <h3> Lorem Ipsum </h3>
+              <ul>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+              </ul>
+          </section>
+          <section class="col-lg-4  col-md-6 col-sm-12">
+              <h3> Lorem Ipsum </h3>
+              <ul>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+              </ul>
+          </section>
+          <section class="col-lg-4  col-md-6 col-sm-12">
+           <h3> Lorem Ipsum </h3>
+             <ul>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+                  <li> <a href="#"> Lorem Ipsum </a> </li>
+              </ul>
+          </section>
+        </div>
+
+      </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
