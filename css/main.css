@@ -26,8 +26,10 @@ h1 span{
   height: 300px;
 }
 
-#centre{
-  justify-content: center;
+.centre{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
 }
 
 .abonner{
