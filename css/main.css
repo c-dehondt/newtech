@@ -11,6 +11,15 @@ h1{
   text-align: center;
 }
 
+nav li{
+  margin-left: 25px;
+  font-size:25px;
+}
+
+.home{
+  font-size: 40px;
+}
+
 h1 span{
   color: #FFCB64;
 }
