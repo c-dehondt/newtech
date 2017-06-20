@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -23,11 +25,12 @@
         <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
     </head>
 
-    <body>
+    <body onload="chrono()">
       <!-- *****************************************header******************************************* -->
       <header class="container">
 
         <nav>
+
           <ul class="nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
@@ -44,17 +47,22 @@
           </ul>
         </nav>
 
-        <h1>News<span>Tech</span></h1>
 
+        <h1>News<span>Tech</span></h1>
       </header>
 <!-- ****************************************fin header******************************************** -->
 
 <!-- *************************************corps du site****************************************** -->
       <main>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded container top">
+        <nav class="navbar-toggleable-md navbar-light bg-faded container-fluid top">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="info navbar-brand">
+            <p id="date"></p>
+            <p id="heure"></p>
+          </div>
+
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav centre">
               <li class="nav-item active">
@@ -81,13 +89,18 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
               </li>
-              <li  id="date"></li>
               <li class="nav-item">
                 <a class="nav-link" href="#" type="button" class="btn" data-toggle="modal" data-target="#abonnement">
                   S'abonner</a>
               </li>
+              <li>
+                <form>
+                  <input class="form-control" type="text" name="sec" value="0" size=3>
+                </form>
+              </li>
             </ul>
           </div>
+
         </nav>
 
         <!-- Modal s'abonner -->
@@ -130,22 +143,26 @@
           </div>
         </div>
 
-        <article class="">
+        <article>
           <div class="container">
-          <img class="pub" src="img/pc/tech2.png" alt="image pub 1">
-          <!-- <img src="img/pc/tech1.png" alt="image pub 2">
-          <img src="img/pc/tech3.jpeg" alt="image pub 3"> -->
-        </div>
 
-        <nav aria-label="...">
-          <ul class="pagination d-flex justify-content-center">
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item active">
-              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-          </ul>
-        </nav>
+            <figure id="img1"><img class="pub" src="img/pc/tech2.png" alt="image pub 1"></figure>
+            <figure id="img2"><img class="pub" src="img/pc/tech.png" alt="image pub 2"></figure>
+            <figure id="img3"><img class="pub" src="img/pc/tech3.png" alt="image pub 3"></figure>
+
+            <nav aria-label="...">
+              <ul class="pagination d-flex justify-content-center">
+                <li class="page-item" onclick="f(1)">
+                  <a class="page-link" href="#">1</a></li>
+
+                <li class="page-item" onclick="f(2)">
+                  <a class="page-link" href="#">2</a></li>
+
+                <li class="page-item" onclick="f(3)">
+                  <a class="page-link" href="#">3</a></li>
+              </ul>
+            </nav>
+          </div>
 
         </article>
 
@@ -155,8 +172,10 @@
               <div class="lib-panel">
                 <div class="row box-shadow">
                   <div class="col-md-6">
-                    <figure class="lib-img-show" id="demo" onmouseover="on()" onmouseout="on()">
+                    <figure class="lib-img-show" onmouseover="on()" onmouseout="off()">
                     <img  id="imgArticle"  src="img/pc/article1.jpg"  alt="photos d'une pub pour un concour">
+                    <!-- <figcaption>photos d'une pub pour un concour</figcaption> -->
+                    <figcaption id="alt"></figcaption>
                   </figure>
                   </div>
                   <div class="col-md-6">
