@@ -119,11 +119,17 @@ figure{
   position: relative;
 }
 
-figcaption{
+.effet{
   font-size: 25px;
   color: #ff6464;
   position: absolute;
   bottom:5%;
+}
+
+/*********************************************aside du site***************************************/
+aside img{
+  width: 100%;
+  height: 200px;
 }
 
 /************************************************footer*******************************************************/

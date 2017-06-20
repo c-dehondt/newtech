@@ -4,17 +4,10 @@ function abonner(){
 
 // onglet d'images
 
-function f(val)
-{
+function f(val){
+
   switch(val)
   {
-
-    case 1:
-    document.getElementById("img1").style.display = "block";
-    document.getElementById("img2").style.display = "none";
-    document.getElementById("img3").style.display = "none";
-
-    break;
     case 1:
     document.getElementById("img1").style.display = "block";
     document.getElementById("img2").style.display = "none";
@@ -32,11 +25,35 @@ function f(val)
     document.getElementById("img2").style.display = "none";
     document.getElementById("img3").style.display = "block";
     break;
-
-    default:
 }
 }
 
+
+// aside du site
+function b(val){
+
+  switch(val)
+  {
+    case 1:
+    document.getElementById("page1").style.display = "block";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "none";
+
+    break;
+    case 2:
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "block";
+    document.getElementById("page3").style.display = "none";
+
+    break;
+    case 3:
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "block";
+    break;
+}
+}
+// info images
 function on() {
     var x= document.getElementById("imgArticle").alt;
            document.getElementById("alt").innerHTML = x;
@@ -53,9 +70,9 @@ var d = new Date();
 var n = d.toLocaleDateString();
 document.getElementById("date").innerHTML = n;
 
-// heure
+// heure + chrono
 var secondes = setInterval
-  (function(){
+  (function(){chrono(),
     times()} ,1000);
 
 function times() {
@@ -66,5 +83,6 @@ document.getElementById("heure").innerHTML = h;
 
 // fonction chrono
 function chrono() {
-  document.forms[0].sec.value=parseInt(document.forms[0].sec.value)+1;
-  setTimeout('chrono()',1000);    }
+  var t= 0;
+  document.getElementById("temps").innerHTML = t;
+}
