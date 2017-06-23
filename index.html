@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -28,6 +30,10 @@
       <header class="container">
 
         <nav>
+<<<<<<< HEAD
+=======
+
+>>>>>>> travaux
           <ul class="nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
@@ -41,6 +47,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
+<<<<<<< HEAD
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Comment créer un site</a>
             </li>
@@ -49,11 +56,19 @@
 
         <h1>News<span>Tech</span></h1>
 
+=======
+          </ul>
+        </nav>
+
+
+        <h1>News<span>Tech</span></h1>
+>>>>>>> travaux
       </header>
 <!-- ****************************************fin header******************************************** -->
 
 <!-- *************************************corps du site****************************************** -->
       <main>
+<<<<<<< HEAD
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded container top">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,6 +77,22 @@
             <ul class="navbar-nav" id="centre">
               <li class="nav-item active">
                 <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+=======
+        <nav class="navbar-toggleable-md navbar-light bg-faded container-fluid top">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="info navbar-brand">
+            <p id="date"></p>
+            <p id="heure"></p>
+            <p id="temps"></p>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav centre">
+              <li class="nav-item active">
+                <a class="nav-link home" href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+>>>>>>> travaux
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">actualité</a>
@@ -85,12 +116,24 @@
                 <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item">
+<<<<<<< HEAD
                 <a class="nav-link" href="#"><button type="button" class="btn" data-toggle="modal" data-target="#abonnement">
                   S'abonner
                 </button></a>
               </li>
             </ul>
           </div>
+=======
+                <a class="nav-link" href="#" type="button" class="btn" data-toggle="modal" data-target="#abonnement">
+                  S'abonner</a>
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+
+>>>>>>> travaux
         </nav>
 
         <!-- Modal s'abonner -->
@@ -99,13 +142,21 @@
             <div class="card">
           <div class="card-block">
 
+<<<<<<< HEAD
             <!--Header-->
+=======
+            <!--Header Modal-->
+>>>>>>> travaux
             <div class="text-center">
                 <h3><i class="fa fa-pencil"></i>Abonnez vous!</h3>
                 <hr class="mt-2 mb-2">
             </div>
 
+<<<<<<< HEAD
             <!--Body-->
+=======
+            <!--Body Modal-->
+>>>>>>> travaux
             <p>Recevez nos dernières nouvelles directement
               dans votre boîte de réception ! (1 seule fois par semaine max)</p>
             <br>
@@ -124,11 +175,16 @@
             </div>
 
             <div class="text-center">
+<<<<<<< HEAD
                 <button class="btn btn-deep-orange">Je m'abonne</button>
+=======
+                <button type="submit" onclick="abonner()" class="btn btn-warning">Je m'abonne</button>
+>>>>>>> travaux
             </div>
 
            </div>
           </div>
+<<<<<<< HEAD
      <!--/Form without header-->
           </div>
         </div>
@@ -153,12 +209,51 @@
         </article>
 
         <article class="container">
+=======
+         </div>
+        </div>
+
+<!-- *********************************début images pub du site**************************************** -->
+
+        <article>
+            <figure id="img1"><img class="pub" src="img/pc/tech2.png" alt="image pub 1"></figure>
+            <figure id="img2"><img class="pub" src="img/pc/tech.jpg" alt="image pub 2"></figure>
+            <figure id="img3"><img class="pub" src="img/pc/tech3.png" alt="image pub 3"></figure>
+
+            <nav aria-label="...">
+              <ul class="pagination d-flex justify-content-center">
+                <li class="page-item" onclick="f(1)">
+                  <button class="btn btn-warning" type="button" name="button">1</button></li>
+
+                <li class="page-item" onclick="f(2)">
+                  <button class="btn btn-warning" type="button" name="button">2</button></li>
+
+                <li class="page-item" onclick="f(3)">
+                  <button class="btn btn-warning" type="button" name="button">3</button></li>
+              </ul>
+            </nav>
+        </article>
+
+<!-- *************************************************Fin images pub du site************************************ -->
+
+<!-- *****************************************debut card article du site*************************************** -->
+        <div class="row">
+        <article class="container col-10 col-md-8 col-lg-8">
+>>>>>>> travaux
           <div class="row">
             <div class="col-12 no-padding lib-item" data-category="view">
               <div class="lib-panel">
                 <div class="row box-shadow">
                   <div class="col-md-6">
+<<<<<<< HEAD
                     <img class="lib-img-show" src="img/pc/article1.jpg">
+=======
+
+                    <img  id="imgArticle" onmouseover="on()" onmouseout="off()" src="img/pc/article1.jpg"  alt="photos d'une pub pour un concour">
+                    <!-- <figcaption>photos d'une pub pour un concour</figcaption> -->
+                    <p class="effet" id="alt"></p>
+
+>>>>>>> travaux
                   </div>
                   <div class="col-md-6">
                     <div class="lib-row lib-header">
@@ -169,16 +264,77 @@
                       Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
                       longévité on va pas se le cacher !
                       La ligne éditoriale a un peu évoluée avec ...
+<<<<<<< HEAD
                      <br><button type="button" class="btn btn-primary btn-lg">En savoir plus</button>
+=======
+                     <br><button type="button" class="btn btn-lg btn-warning">En savoir plus</button>
+>>>>>>> travaux
                     </div>
                  </div>
                </div>
              </div>
           </div>
         </article>
+<<<<<<< HEAD
 
       </main>
 
+=======
+<!-- *********************************************fin article du site****************************************** -->
+<!-- ************************************debut aside du site****************************************** -->
+        <aside class="col-12 col-md-3 col-lg-3">
+          <ul class="pagination d-flex justify-content-center">
+            <li class="page-item" onclick="b(1)">
+              <button class="nav-link btn-warning" type="button" name="button">news</button>
+            </li>
+            <li class="page-item" onclick="b(2)">
+              <button class="nav-link btn-warning" type="button" name="button">Infos</button>
+            </li>
+            <li class="page-item" onclick="b(3)">
+              <button class="nav-link btn-warning" type="button" name="button">Evenements</button>
+            </li>
+          </ul>
+
+          <article id="page1">
+            <div class="card">
+              <img class="card-img-top" src="img/pc/a1.png" alt="photo article">
+              <div class="card-block">
+                <h4 class="card-title">titre </h4>
+                <p class="card-text"> Nulla quis interdum arcu. Vestibulum eget sapien vitae velit commodo tristique a at augue. Nulla sapien dui, sagittis at ligula eleifend, auctor varius augue. Morbi nibh tellus, tempus id libero id, imperdiet faucibus tortor. Mauris vel euismod velit, vitae pharetra turpis. Pellentesque ac .</p>
+                <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
+              </div>
+            </div>
+          </article>
+
+          <article id="page2">
+            <div class="card" >
+              <img class="card-img-top" src="img/pc/a2.jpeg" alt="photo article">
+              <div class="card-block">
+                <h4 class="card-title">titre 2</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
+              </div>
+            </div>
+          </article>
+
+          <article id="page3">
+            <div class="card" >
+              <img class="card-img-top" src="img/pc/a3.png" alt="photo article">
+              <div class="card-block">
+                <h4 class="card-title">titre 3</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
+              </div>
+            </div>
+          </article>
+
+        </aside>
+      </div>
+      </main>
+
+<!-- **********************************************footer du site******************************************* -->
+
+>>>>>>> travaux
       <footer class="row contenair-fluid d-flex justify-content-center">
         <section class="col-lg-3">
          <h3>Abonnez vous!</h3>
@@ -199,7 +355,11 @@
            </div>
            <div class="form-group row">
              <div class="offset-sm-2 col-sm-10">
+<<<<<<< HEAD
                <button type="submit" class="btn btn-primary">Je m'abonne</button>
+=======
+               <button type="submit" onclick="abonner()" class="btn btn-warning">Je m'abonne</button>
+>>>>>>> travaux
              </div>
            </div>
          </form>
@@ -246,6 +406,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="js/mdp.js"></script>
         <script src="js/mdp.min.js"></script>
+<<<<<<< HEAD
+=======
+        <script type="text/javascript">
+          window.onload = f(1);
+          window.onload = chrono();
+          window.onload = b(1);
+        </script>
+>>>>>>> travaux
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
