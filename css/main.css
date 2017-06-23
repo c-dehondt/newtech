@@ -6,7 +6,6 @@ h1{
   text-align: center;
 }
 
-
 .info{
   font-size: 10px
 }
@@ -35,16 +34,23 @@ h1 span{
   height: 300px;
 }
 
+.centre{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
 
 .abonner{
   margin-top: 300px;
 }
 
-
-/*******************************************article site**********************************************/
-
 /*******************************************article site**********************************************
 *****************************************************************************************************/
+body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+}
 
 .lib-panel {
     margin-bottom: 20Px;
@@ -104,10 +110,6 @@ h1 span{
     padding: 0;
 }
 
-
-/************************************************footer*******************************************************/
-
-
 figure{
   position: relative;
 }
@@ -126,7 +128,6 @@ aside img{
 }
 
 /************************************************footer*******************************************************/
-
 footer h3 {
 	border-bottom: 1px solid #BAC1C8;
 	color: #54697E;
