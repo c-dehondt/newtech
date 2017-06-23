@@ -53,210 +53,197 @@
 
 <!-- *************************************corps du site****************************************** -->
       <main>
-        
-        <nav class="navbar-toggleable-md navbar-light bg-faded container-fluid top">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="info navbar-brand">
-            <p id="date"></p>
-            <p id="heure"></p>
-            <p id="temps"></p>
-          </div>
+  <nav class="navbar-toggleable-md navbar-light bg-faded container-fluid top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="info navbar-brand">
+      <p id="date"></p>
+      <p id="heure"></p>
+      <p id="temps"></p>
+    </div>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav centre">
-              <li class="nav-item active">
-                <a class="nav-link home" href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav centre">
+        <li class="nav-item active">
+          <a class="nav-link home" href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">actualité</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Innovation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Jeux</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Teste</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" type="button" class="btn" data-toggle="modal" data-target="#abonnement">
+            S'abonner</a>
+        </li>
+        <li>
 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">actualité</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Innovation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Jeux</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Apps</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Teste</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#abonnement">
-                  S'abonner
-                </button></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        </li>
+      </ul>
+    </div>
 
-        <!-- Modal s'abonner -->
-        <div class="modal fade" id="abonnement" tabindex="-1" role="dialog" aria-labelledby="abonnementTitle" aria-hidden="true">
-          <div class="modal-dialog abonner" role="document">
-            <div class="card">
-                <div class="card-block">
+  </nav>
 
+  <!-- Modal s'abonner -->
+  <div class="modal fade" id="abonnement" tabindex="-1" role="dialog" aria-labelledby="abonnementTitle" aria-hidden="true">
+    <div class="modal-dialog abonner" role="document">
+      <div class="card">
+    <div class="card-block">
 
-            <!--Header-->
+      <!--Header Modal-->
+      <div class="text-center">
+          <h3><i class="fa fa-pencil"></i>Abonnez vous!</h3>
+          <hr class="mt-2 mb-2">
+      </div>
 
-            <!--Header Modal-->
+      <!--Body Modal-->
+      <p>Recevez nos dernières nouvelles directement
+        dans votre boîte de réception ! (1 seule fois par semaine max)</p>
+      <br>
 
-            <div class="text-center">
-                <h3><i class="fa fa-pencil"></i>Abonnez vous!</h3>
-                <hr class="mt-2 mb-2">
-            </div>
+      <!--Body-->
+      <div class="md-form">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="form3" class="form-control">
+        <label for="form3">Nom</label>
+      </div>
 
-            <!--Body-->
+      <div class="md-form">
+        <i class="fa fa-envelope prefix"></i>
+        <input type="text" id="form2" class="form-control">
+        <label for="form2">Email</label>
+      </div>
 
-            <!--Body Modal-->
+      <div class="text-center">
+          <button type="submit" onclick="abonner()" class="btn btn-warning">Je m'abonne</button>
+      </div>
 
-            <p>Recevez nos dernières nouvelles directement
-              dans votre boîte de réception ! (1 seule fois par semaine max)</p>
-            <br>
-
-            <!--Body-->
-            <div class="md-form">
-              <i class="fa fa-user prefix"></i>
-              <input type="text" id="form3" class="form-control">
-              <label for="form3">Nom</label>
-            </div>
-
-            <div class="md-form">
-              <i class="fa fa-envelope prefix"></i>
-              <input type="text" id="form2" class="form-control">
-              <label for="form2">Email</label>
-            </div>
-
-            <div class="text-center">
-
-                <button class="btn btn-deep-orange">Je m'abonne</button>
-
-                <button type="submit" onclick="abonner()" class="btn btn-warning">Je m'abonne</button>
-
-            </div>
-
-           </div>
-          </div>
-         </div>
-        </div>
-     <!--/Form without header-->
+     </div>
+    </div>
+   </div>
+  </div>
 
 <!-- *********************************début images pub du site**************************************** -->
-      
-        <article>
-            <figure id="img1"><img class="pub" src="img/pc/tech2.png" alt="image pub 1"></figure>
-            <figure id="img2"><img class="pub" src="img/pc/tech.jpg" alt="image pub 2"></figure>
-            <figure id="img3"><img class="pub" src="img/pc/tech3.png" alt="image pub 3"></figure>
 
-            <nav aria-label="...">
-              <ul class="pagination d-flex justify-content-center">
-                <li class="page-item" onclick="f(1)">
-                  <button class="btn btn-warning" type="button" name="button">1</button></li>
+  <article>
+      <figure id="img1"><img class="pub" src="img/pc/tech2.png" alt="image pub 1"></figure>
+      <figure id="img2"><img class="pub" src="img/pc/tech.jpg" alt="image pub 2"></figure>
+      <figure id="img3"><img class="pub" src="img/pc/tech3.png" alt="image pub 3"></figure>
 
-                <li class="page-item" onclick="f(2)">
-                  <button class="btn btn-warning" type="button" name="button">2</button></li>
+      <nav aria-label="...">
+        <ul class="pagination d-flex justify-content-center">
+          <li class="page-item" onclick="f(1)">
+            <button class="btn btn-warning" type="button" name="button">1</button></li>
 
-                <li class="page-item" onclick="f(3)">
-                  <button class="btn btn-warning" type="button" name="button">3</button></li>
-              </ul>
-            </nav>
-        </article>
+          <li class="page-item" onclick="f(2)">
+            <button class="btn btn-warning" type="button" name="button">2</button></li>
+
+          <li class="page-item" onclick="f(3)">
+            <button class="btn btn-warning" type="button" name="button">3</button></li>
+        </ul>
+      </nav>
+  </article>
 
 <!-- *************************************************Fin images pub du site************************************ -->
 
 <!-- *****************************************debut card article du site*************************************** -->
-       <div class="row">
-          <article class="container col-10 col-md-8 col-lg-8">
+  <div class="row">
+  <article class="container col-10 col-md-8 col-lg-8">
+    <div class="row">
+      <div class="col-12 no-padding lib-item" data-category="view">
+        <div class="lib-panel">
+          <div class="row box-shadow">
+            <div class="col-md-6">
 
-          <div class="row">
-            <div class="col-12 no-padding lib-item" data-category="view">
-              <div class="lib-panel">
-                <div class="row box-shadow">
-                  <div class="col-lg-6">
-                    <img  id="imgArticle" onmouseover="on()" onmouseout="off()" src="img/pc/article1.jpg"  alt="photos d'une pub pour un concour">
-                    <p class="effet" id="alt"></p>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="lib-row lib-header">
-                      <h3>Concours</h3>
-                      <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
-                    </div>
-                    <div class="lib-row lib-desc">
-                      Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
-                      longévité on va pas se le cacher !
-                      La ligne éditoriale a un peu évoluée avec ...
+              <img  id="imgArticle" onmouseover="on()" onmouseout="off()" src="img/pc/article1.jpg"  alt="photos d'une pub pour un concour">
+              <!-- <figcaption>photos d'une pub pour un concour</figcaption> -->
+              <p class="effet" id="alt"></p>
 
-                     <br><button type="button" class="btn btn-lg btn-warning">En savoir plus</button>
-                    </div>
-                 </div>
-                </div>
-               </div>
-             </div>
-          </div>
-        </article>
-
-
+            </div>
+            <div class="col-md-6">
+              <div class="lib-row lib-header">
+                <h3>Concours</h3>
+                <h4>4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner)</h4>
+              </div>
+              <div class="lib-row lib-desc">
+                Bonjour à tous, Voilà un peu plus de 4 ans que le site existe. Sur internet ça représente une certaine
+                longévité on va pas se le cacher !
+                La ligne éditoriale a un peu évoluée avec ...
+               <br><button type="button" class="btn btn-lg btn-warning">En savoir plus</button>
+              </div>
+           </div>
+         </div>
+       </div>
+    </div>
+  </article>
 <!-- *********************************************fin article du site****************************************** -->
 <!-- ************************************debut aside du site****************************************** -->
-        <aside class="col-12 col-md-3 col-lg-3">
-          <ul class="pagination d-flex justify-content-center">
-            <li class="page-item" onclick="b(1)">
-              <button class="nav-link btn-warning" type="button" name="button">news</button>
-            </li>
-            <li class="page-item" onclick="b(2)">
-              <button class="nav-link btn-warning" type="button" name="button">Infos</button>
-            </li>
-            <li class="page-item" onclick="b(3)">
-              <button class="nav-link btn-warning" type="button" name="button">Evenements</button>
-            </li>
-          </ul>
+  <aside class="col-12 col-md-3 col-lg-3">
+    <ul class="pagination d-flex justify-content-center">
+      <li class="page-item" onclick="b(1)">
+        <button class="nav-link btn-warning" type="button" name="button">news</button>
+      </li>
+      <li class="page-item" onclick="b(2)">
+        <button class="nav-link btn-warning" type="button" name="button">Infos</button>
+      </li>
+      <li class="page-item" onclick="b(3)">
+        <button class="nav-link btn-warning" type="button" name="button">Evenements</button>
+      </li>
+    </ul>
 
-          <article id="page1">
-            <div class="card">
-              <img class="card-img-top" src="img/pc/a1.png" alt="photo article">
-              <div class="card-block">
-                <h4 class="card-title">titre </h4>
-                <p class="card-text"> Nulla quis interdum arcu. Vestibulum eget sapien vitae velit commodo tristique a at augue. Nulla sapien dui, sagittis at ligula eleifend, auctor varius augue. Morbi nibh tellus, tempus id libero id, imperdiet faucibus tortor. Mauris vel euismod velit, vitae pharetra turpis. Pellentesque ac .</p>
-                <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
-              </div>
-            </div>
-          </article>
-
-          <article id="page2">
-            <div class="card" >
-              <img class="card-img-top" src="img/pc/a2.jpeg" alt="photo article">
-              <div class="card-block">
-                <h4 class="card-title">titre 2</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
-              </div>
-            </div>
-          </article>
-
-          <article id="page3">
-            <div class="card" >
-              <img class="card-img-top" src="img/pc/a3.png" alt="photo article">
-              <div class="card-block">
-                <h4 class="card-title">titre 3</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
-              </div>
-            </div>
-          </article>
-
-        </aside>
+    <article id="page1">
+      <div class="card">
+        <img class="card-img-top" src="img/pc/a1.png" alt="photo article">
+        <div class="card-block">
+          <h4 class="card-title">titre </h4>
+          <p class="card-text"> Nulla quis interdum arcu. Vestibulum eget sapien vitae velit commodo tristique a at augue. Nulla sapien dui, sagittis at ligula eleifend, auctor varius augue. Morbi nibh tellus, tempus id libero id, imperdiet faucibus tortor. Mauris vel euismod velit, vitae pharetra turpis. Pellentesque ac .</p>
+          <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
+        </div>
       </div>
-     </main>
+    </article>
+
+    <article id="page2">
+      <div class="card" >
+        <img class="card-img-top" src="img/pc/a2.jpeg" alt="photo article">
+        <div class="card-block">
+          <h4 class="card-title">titre 2</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
+        </div>
+      </div>
+    </article>
+
+    <article id="page3">
+      <div class="card" >
+        <img class="card-img-top" src="img/pc/a3.png" alt="photo article">
+        <div class="card-block">
+          <h4 class="card-title">titre 3</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Auteur de l'article</small></p>
+        </div>
+      </div>
+    </article>
+
+  </aside>
+</div>
+</main>
 
 <!-- **********************************************footer du site******************************************* -->
 
