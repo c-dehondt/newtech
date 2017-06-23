@@ -1,7 +1,10 @@
 function abonner(){
   confirm("voulez vous confirmer votre inscription?");
-}
 
+  if (true) {
+    alert("merci pour votre confiance");
+}
+}
 // onglet d'images
 
 function f(val){
@@ -53,6 +56,7 @@ function b(val){
     break;
 }
 }
+
 // info images
 function on() {
     var x= document.getElementById("imgArticle").alt;
